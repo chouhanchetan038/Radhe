@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.woff2')
+      format('woff2'),
+    url('/public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.woff')
+      format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Medium.woff2')
+      format('woff2'),
+    url('/public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Medium.woff')
+      format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'General Sans';
+  src: url('/public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Semibold.woff2')
+      format('woff2'),
+    url('/public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Semibold.woff')
+      format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Bold.woff2')
+      format('woff2'),
+    url('/public/fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Bold.woff')
+      format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .no-spinner::-webkit-outer-spin-button,
+  .no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  .no-spinner {
+    -moz-appearance: textfield;
+  }
+
+  /* Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    color: white !important;
+    background: transparent !important;
+    transition: background 50000s ease-in, color 50000s ease-in;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    @apply overflow-x-hidden text-base scroll-smooth;
+  }
+  body {
+    @apply font-generalSans text-black bg-white;
+  }
+  /* font-josefin */
+  p {
+    @apply leading-6;
+  }
+
+  .font-76 {
+    @apply text-76 font-semibold;
+  }
+  .font-46 {
+    @apply text-46;
+  }
+  .font-36 {
+    @apply text-36;
+  }
+  .font-26 {
+    @apply text-26;
+  }
+  .font-22 {
+    @apply text-22;
+  }
+  .font-20 {
+    @apply text-20;
+  }
+  .font-18 {
+    @apply text-18;
+  }
+  .font-16 {
+    @apply text-16;
+  }
+}
+
+@layer components {
+  .form-eror {
+    @apply text-red-700  mt-2 text-sm font-semibold;
+  }
+  .form-input {
+    @apply bg-primary-600 h-[60px] text-primary-900 px-[30px] py-[24px] rounded-20 right-0 outline-0 focus:outline-0 ring-0 focus:ring-0;
+  }
+  .ax-center {
+    @apply absolute left-1/2 -translate-x-1/2;
+  }
+  .ay-center {
+    @apply absolute top-1/2 -translate-y-1/2;
+  }
+  .a-center {
+    @apply absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .btn {
+    @apply text-22 text-white  font-medium py-3 px-8 min-w-[100px] h-[60px] gap-4 flex-center;
+  }
+  .btn-primary {
+    @apply bg-primary-400;
+  }
+  .btn-secondary {
+    @apply bg-primary-300;
+  }
+  .btn-outline-white {
+    @apply border border-white;
+  }
+}
+
+@layer utilities {
+}
+
+.react {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  margin-top: -125px;
+  margin-left: -125px;
+  cursor: 'pointer';
+}
+
+#notif {
+  visibility: hidden;
+  position: fixed;
+  color: white;
+  border-radius: 10px;
+  top: 0;
+  right: 0;
+  transform: translate(-15px, 15px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.notif-text-icon {
+  align-items: stretch;
+  box-shadow: 0 1px 1px rgb(10 10 10 / 10%);
+  display: flex;
+  max-width: 250px;
+}
+
+.notif-message {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  font-weight: 700;
+  padding: 15px 25px;
+}
+
+#notif.show {
+  visibility: visible;
+  animation: show 0.5s forwards;
+}
+
+@keyframes show {
+  0% {
+    transform: translate(-15px, 15px) scale(0);
+  }
+
+  50% {
+    transform: translate(-15px, 15px) scale(1.2);
+  }
+
+  70% {
+    transform: translate(-15px, 15px) scale(0.9);
+  }
+
+  100% {
+    transform: translate(-15px, 15px) scale(1);
+  }
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+}
+.loader::after,
+.loader::before {
+  content: '';
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: 4px solid #76ce76;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: rotation 3s ease-in-out infinite alternate;
+}
+.loader::after {
+  border-color: #008000;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Toastify__toast-container--top-left,
+.Toastify__toast-container--top-center,
+.Toastify__toast-container--top-right {
+  z-index: 99999 !important;
+}
