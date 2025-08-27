@@ -171,7 +171,7 @@ const ContactSection = () => {
             </div>
 
             <p className="mt-1 text-gray-600">
-              info@radheshrinivasafoundation.com
+              hefo@radheshrinivasa.com
             </p>
           </div>
         </motion.div>
@@ -203,7 +203,7 @@ const ContactSection = () => {
               <h3 className="font-medium text-gray-900">Phone</h3>
             </div>
 
-            <p className="mt-1 text-gray-600">+91 9226436920</p>
+            <p className="mt-1 text-gray-600">3452435904</p>
           </div>
         </motion.div>
 
@@ -215,30 +215,9 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="bg-white p-6 rounded-xl shadow-md flex items-start space-x-4"
         >
-          <div>
-            <div className="bg-mint-light mb-2 flex gap-2 items-center rounded-full">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-map-pin h-5 w-5 text-mint-dark"
-              >
-                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              <h3 className="font-medium text-gray-900">Location</h3>
-            </div>
+          
 
-            <p className="mt-1 text-gray-600">
-              Shop No.A-112, Little Earth Commercial society Survey No:19/1 to
-              7, Kivale (malwadi) Tehsil Haveli Dist Pune 412101 Maharastra
-            </p>
+           
           </div>
         </motion.div>
       </div>
